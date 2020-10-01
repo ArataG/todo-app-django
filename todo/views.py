@@ -18,8 +18,8 @@ def add_todo(request):
   todo_items = Todo.objects.all().order_by("added_date")
   return HttpResponseRedirect("/")
 
-@require_POST
 def delete_todo(request,todo_id):
-  todo = get_object_or_404(Todo, id=todo_id)
-  todo.delete()    
+  #todo = get_object_or_404(Todo, id=todo_id)
+  #todo.delete()    
+  Todo.objects.get(id=todo_id).delete()
   return HttpResponseRedirect("/")
