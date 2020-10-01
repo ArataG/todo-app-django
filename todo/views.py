@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.utils import timezone
 from django.http import HttpResponseRedirect
+from django.views.decorators.http import require_POST
 
 from .models import Todo
 
@@ -15,4 +16,10 @@ def add_todo(request):
   content = request.POST["content"]
   Todo.objects.create(added_date=current_date, text=content) #add database
   todo_items = Todo.objects.all().order_by("added_date")
+  return HttpResponseRedirect("/")
+
+@require_POST
+def delete_todo(request,todo_id):
+  todo = get_object_or_404(Todo, id=todo_id)
+  todo.delete()    
   return HttpResponseRedirect("/")
