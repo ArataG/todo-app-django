@@ -53,7 +53,7 @@ Django~=2.2.4
 
 - Need help?
 
-You can find more infomation about Installing Python3, Django and Virtual Enviroment on this site.[^1]
+You can find more infomation about Installing Python3, Django and Virtual Enviroment on this site >>[Django Girls Tutorial](https://tutorial.djangogirls.org/)
 
 ## Running the tests
 
@@ -70,7 +70,7 @@ You can find more infomation about Installing Python3, Django and Virtual Enviro
 - ArataG: [https://github.com/ArataG/](https://github.com/ArataG/)
 
 ## Reference
-- [^1]: [Django Girls Tutorial](https://tutorial.djangogirls.org/)
+- [Django Girls Tutorial](https://tutorial.djangogirls.org/)
 
 - Front end Library
     - [BootStrap](https://getbootstrap.jp/docs/4.3/getting-started/introduction/)
