@@ -6,7 +6,7 @@ This app has basic function as following;
 - Delete item
 
 ## Demo
-![result](./demo.gif)
+![result](https://github.com/ArataG/todo-app-django/blob/media/demo.gif)
 
 
 ## Getting Started
