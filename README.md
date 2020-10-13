@@ -1,4 +1,4 @@
-# to-do-app-Django
+# todo-app-django
 This app is simple ToDo App on web browser.
 
 This app has basic function as following;
